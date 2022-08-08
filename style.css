@@ -6,7 +6,7 @@ body{
 .menu{
     margin:0;
     color: black;
-    background-color: beige;
+    background-color: burlywood;
     display: flex;
     flex-direction:row;
     flex-wrap:nowrap;
@@ -17,7 +17,7 @@ body{
 .menu li{
     display:inline;
     margin: 1px 20px;
-    border: 2px solid black;
+    border: 2px solid rgb(65, 65, 60);
     transition: all 1s;
     text-transform: uppercase;
     font-family: cursive;
@@ -25,14 +25,14 @@ body{
 }
 
 .menu_link :hover{
-    border-color: rgb(247, 4, 186);
+    border-color: rgb(254, 4, 4);
     
 }
 
 #actividades{
     display: grid;
     height: 100vh;
-    background-color:beige;
+    background-color:rgb(65, 65, 60);
     grid-template-areas: 
     "fitness musculacion"
     "cardio crossfit"
@@ -85,6 +85,7 @@ body{
 
 footer{
     font-style: italic;
+    background-color: burlywood;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -93,7 +94,7 @@ footer{
 }
 @media (max-width: 768px) {
     #actividades{
-        background-color: beige;
+        background-color: rgb(65, 65, 60);
         min-height: 1000px;
         min-width: 1200px;
         grid-template-areas: 
