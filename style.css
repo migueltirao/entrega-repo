@@ -1,3 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    margin:0;
+    color: black;
+    background-color: burlywood;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.menu li{
+    display:inline;
+    margin: 1px 20px;
+    border: 2px solid rgb(65, 65, 60);
+    transition: all 1s;
+    text-transform: uppercase;
+    font-family: cursive;
+    
+}
+
+.menu_link :hover{
+    border-color: rgb(254, 4, 4);
+    
+}
+
+#actividades{
+    display: grid;
+    height: 100vh;
+    background-color:rgb(65, 65, 60);
+    grid-template-areas: 
+    "fitness musculacion"
+    "cardio crossfit"
+    ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.fitness{
+    grid-area: fitness;
+    display: grid;
+    background-color: blueviolet;
+    background-image: url(./imagenes/fitness.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.musculacion{
+    grid-area: musculacion;
+    display: grid;
+    background-color: chocolate;
+    background-image: url(./imagenes/musculacion\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.cardio{
+    grid-area: cardio;
+    display: grid;
+    background-color: yellow;
+    background-image: url(./imagenes/cardio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.crossfit{
+    grid-area: crossfit;
+    display: grid;
+    background-color: coral;
+    background-image: url(./imagenes/musculacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bordes{
+    border: 2px solid black;
+}
 
 
-/*# sourceMappingURL=style.css.map */
+footer{
+    font-style: italic;
+    background-color: burlywood;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+}
+@media (max-width: 768px) {
+    #actividades{
+        background-color: rgb(65, 65, 60);
+        min-height: 1000px;
+        min-width: 1200px;
+        grid-template-areas: 
+        "fitness ."
+        "crossfit ."
+        "musculacion ."
+        "cardio ."
+        ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+    .menu{
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    
+}
+    
